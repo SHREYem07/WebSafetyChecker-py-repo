@@ -1,0 +1,11 @@
+requests
+urllib3
+beautifulsoup4
+colorama
+rich
+dnspython
+python-whois
+Pillow
+pytest
+ruff
+vulture

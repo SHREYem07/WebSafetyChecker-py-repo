@@ -1,0 +1,34 @@
+<mxfile host="app.diagrams.net" modified="2026-02-28T00:00:00.000Z" agent="Mozilla/5.0" version="24.7.17" type="device">
+  <diagram id="clean-arch" name="Clean Architecture">
+    <mxGraphModel dx="1280" dy="720" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1600" pageHeight="1000" math="0" shadow="0">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        <mxCell id="title" value="WebSafetyChecker - Clean Architecture" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontStyle=1;fontSize=22;" vertex="1" parent="1">
+          <mxGeometry x="430" y="20" width="560" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="domain" value="Domain&#xa;- Scoring rules&#xa;- Risk model&#xa;- Verdict policy" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="640" y="380" width="220" height="140" as="geometry"/>
+        </mxCell>
+        <mxCell id="application" value="Application&#xa;- Scan orchestration&#xa;- Benchmark use-cases" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="560" y="220" width="380" height="120" as="geometry"/>
+        </mxCell>
+        <mxCell id="presentation" value="Presentation&#xa;- CLI&#xa;- Terminal/Markdown output" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="240" y="120" width="300" height="110" as="geometry"/>
+        </mxCell>
+        <mxCell id="infrastructure" value="Infrastructure&#xa;- HTTP/TLS/DNS/WHOIS adapters&#xa;- File/report persistence" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="960" y="120" width="360" height="130" as="geometry"/>
+        </mxCell>
+        <mxCell id="a1" style="endArrow=block;endFill=1;html=1;strokeWidth=2;" edge="1" parent="1" source="presentation" target="application">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="a2" style="endArrow=block;endFill=1;html=1;strokeWidth=2;" edge="1" parent="1" source="infrastructure" target="application">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="a3" style="endArrow=block;endFill=1;html=1;strokeWidth=2;" edge="1" parent="1" source="application" target="domain">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
